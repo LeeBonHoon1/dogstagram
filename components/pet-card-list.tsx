@@ -1,4 +1,7 @@
+"use client";
+
 import PetCard from "@/components/pet-card";
+import useGetDogs from "@/hooks/getDogs";
 
 const dogs = [
   { id: 1, name: "pet1", src: "/pet1.jpg", weight: "3kg", gender: "man" },
@@ -10,6 +13,7 @@ const dogs = [
 ];
 
 const PetCardList = () => {
+  const { data, error, isFetching, isLoading } = useGetDogs();
   return (
     <div className="space-y-10">
       {dogs.map((dog) => {
