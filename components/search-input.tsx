@@ -51,7 +51,9 @@ const SearchInput = () => {
                 <FormControl>
                   <Input placeholder="Search" {...field} />
                 </FormControl>
-                <Button type="submit">검색</Button>
+                <Button type="submit" variant={"custom"}>
+                  검색
+                </Button>
               </div>
               <FormMessage />
             </FormItem>

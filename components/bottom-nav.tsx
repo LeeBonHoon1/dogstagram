@@ -38,7 +38,7 @@ const bottomNavList = [
 
 const BottomNav = () => {
   return (
-    <div className="absolute bottom-0 bg-transparent border-2 h-20 w-full rounded-t-[40px] shadow-2xl">
+    <div className="fixed bottom-0 bg-white border-2 h-20 w-full rounded-t-[40px] shadow-2xl">
       <div className="flex h-full items-center justify-evenly">
         {bottomNavList.map((item) => {
           const IconComponent = item.icon;
